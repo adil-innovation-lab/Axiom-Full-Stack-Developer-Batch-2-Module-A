@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Video Player</title>
+</head>
+<body>
+    <!-- Title -->
+    <h1>Video Player</h1>
+    <!-- Video Player -->
+    <video src="videos/video1.mp4" id="video" class="video" poster="images/cover.jpeg"></video>
+    <!-- Custom video player controls -->
+    <div class="controls">
+        <!-- Play Button -->
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <!-- Stop Button -->
+        <button class="btn" id="stop">
+            <i class="fa fa-stop fa-2x"></i>
+        </button>
+        <!-- Progress Bar Slider -->
+        <input type="range" id="progress" class="progress" 
+            min="0" max="100" step="0.1" value="0"
+        />
+        <!-- Duration of video -->
+        <span class="time" id="time">00:00</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
