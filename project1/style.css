@@ -10,7 +10,8 @@
 }
 
 body {
-    background-color: hsla(0, 0%, 50%, 0.1);
+    background-color: white;
+    /* background-color: hsla(0, 0%, 50%, 0.1); */
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
@@ -20,15 +21,20 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     width: 450px;
 }
 
+.back-btn {
+    color: rgb(255, 211, 0);
+}
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #5e5e5e;
 }
 
 .form {
@@ -48,12 +54,18 @@ h2 {
 }
 
 .form-control input {
-    border: 2px solid lightgray;
-    border-radius: 4px;
+    border: 0;
+    border-bottom: 2px solid lightgray;
     display: block;
     width: 100%;
     padding: 10px;
     font-size: 14px;
+    background-color: transparent;
+}
+
+.form-control input:hover {
+    outline: 0;
+    border-color: gray;
 }
 
 .form-control input:focus {
@@ -83,15 +95,16 @@ h2 {
 
 .form button {
     cursor: pointer;
-    background-color: #3725f8;
-    border: 2px solid #3725f8;
-    border-radius: 4px;
-    color: white;
+    background-color: #e2e2e2;
+    border: 2px solid #e2e2e2;
+    border-radius: 2px;
+    color: #5e5e5e;
     display: block;
     font-size: 16px;
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.4);
 }
 
 button.home {
