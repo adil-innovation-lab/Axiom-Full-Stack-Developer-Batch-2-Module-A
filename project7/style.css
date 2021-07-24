@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #113537;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+}
+
+.hangman-container {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+.hangman-part {
+    display: none;
+}
+
+.incorrect-guesses-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 18px;
+}
+
+.word {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter {
+    font-size: 36px;
+    border-bottom: 5px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    height: 50px;
+    width: 20px;
+}
+
+.gameover-container {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: #37505C;
+    color: white;
+    border: 0;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.popup button:active {
+    transform: scale(0.9);
+}
+
+.notification-container {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.notification-container.show {
+    transform: translateY(-70px);
+}
+
+.notification-container p {
+    margin: 0;
+}
