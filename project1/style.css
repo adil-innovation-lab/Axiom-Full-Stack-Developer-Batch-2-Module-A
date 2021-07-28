@@ -37,6 +37,18 @@ h2 {
     color: #5e5e5e;
 }
 
+p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #5e5e5e;
+    font-size: 12px;
+}
+
+a {
+    color: #009EDB;
+}
+
 .form {
     padding: 30px 40px;
 }
